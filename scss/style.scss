@@ -1,0 +1,19 @@
+/*! 
+Theme Name:     Fueltrac Mockup
+URI:			balsamade.com/fueltrac-mockul
+Description:    Experimenting with animating SVG and making an ultra lightweight template (<50kB) 
+Author:         Sean Ockert
+Author URI:     balsamade.com
+Version:        0.4
+License:		Includes the grid system from Zurb Foundation 5, responsive nav from @viljamis and an SVG from thenounproject.com
+*/
+
+@import "reset";
+@import "functions";
+@import "variables";
+@import "grid";
+@import "global";
+@import "buttons";
+@import "menu";
+@import "animations";
+@import "print";

@@ -1,0 +1,529 @@
+
+
+/*  Default body styles ---------------------- */
+
+body {
+  background: $color-off-white;
+  color: $color-base-font;
+  padding: 0;
+  margin: 0;
+  font-family: $base-font-family;
+  font-size: $font-size-base;
+  font-weight: $normal;
+  line-height: 1.5;
+  position: relative;
+}
+
+/* Miscellaneous useful HTML classes ---------------------- */
+.left         { float: left !important; }
+.right        { float: right !important; }
+.text-left    { text-align: left !important; }
+.text-right   { text-align: right !important; }
+.text-center  { text-align: center !important; }
+.text-justify { text-align: justify !important; }
+.hidden         { display: none; }
+.hidden-small   { display: none; }
+
+// Antialiased font smoothing works best for light text on a dark background.
+.antialiased { -webkit-font-smoothing: antialiased; }
+
+small { font-size: $font-size-small; }
+
+/* Links  ---------------------- */
+
+a {
+  color: $color-blue;
+  text-decoration: none;
+  
+  &:hover {
+    text-decoration: underline;
+    color: darken($color-blue, 20%);
+  }
+}
+
+a:focus { outline: none; }
+
+
+/* Lists  ---------------------- */
+
+ul, ol {
+  li {
+    margin-bottom: $base-padding/2;
+  }
+}
+
+
+/* Header  ---------------------- */
+
+
+#logo {
+  margin-top: $base-padding/2;
+  margin-bottom: $base-padding/2;
+  
+  h1, div {
+    font-weight: $black; 
+    margin: 0;
+    line-height: 1;
+
+    &:after {
+      content: "Phone: (07) 3219 4466";
+      font-size: $font-size-small;
+      color: $color-blue;
+      display: block;
+      white-space: nowrap;
+    }
+
+    a {
+      color: $color-dark;
+      text-decoration: none;
+    }   
+  }
+  
+  small {
+    color: $color-mute;
+    line-height: 1;
+    display: block;
+    font-size: 0.8em;
+    white-space: nowrap;
+  }
+
+}
+
+
+nav ul {
+  @include navigation-list;
+  padding: $base-padding 0;
+  padding-top: $base-padding*1.5;
+  float: right;
+  
+  li {
+    
+    a {
+      display: block;
+      padding: $base-padding $base-padding;
+      text-decoration: none;
+      color: $color-mid;
+      font-weight: $bold;
+      text-transform: uppercase;
+      font-size: $font-size-med;
+      line-height: 1;
+ 
+      &:hover {
+        color: #000;
+        text-decoration: none;
+      }
+      
+      &.active {
+        font-weight: $bold;
+      }
+    }  
+    
+    &.tel {
+        margin-left: $base-padding;
+            
+      a {
+        background: url('../images/phone.svg') no-repeat 0% 0%;
+        background-size: 22px auto;
+        padding-left: $base-padding*2.5;
+        padding-right: 0;
+        color: $color-blue !important;
+      }
+    }
+  }
+}
+
+
+/* Hero Banner  ---------------------- */
+
+.hero { 
+  color: #fff;
+  text-align: left;
+  
+  .row {
+    background: $color-blue;   
+  }
+  
+  .inner {
+    padding: $base-padding*2 0;
+  }
+  
+  h2 {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: $black;
+    line-height: 1.1;
+     
+    em {
+      font-style: normal;
+      font-weight: $light;
+    }
+    
+    a:hover {
+      text-decoration: none;
+    }
+  }
+  
+  p {
+    font-size: $font-size-med;
+    margin-top: 0;
+  }
+  
+  a {
+    color: #fff;
+    text-decoration: none;
+      
+      span {
+        display: inline-block;
+        margin-right: $base-padding;
+      }
+      
+      &:hover {
+        background: darken($color-dark-blue, 10%);
+      }
+  }
+  
+  #fuel {         
+      #jerrycan {
+        margin-left: -20%;
+        margin-top: 40px;
+      }
+  }
+
+}
+
+/* Content  ---------------------- */
+
+
+
+/* Homepage Content  ---------------------- */
+
+.box {
+  border-radius: $base-padding/2;
+  background: $color-light-grey;
+  padding: $base-padding*2;
+  margin-top: 0.9375rem;
+  min-height: 220px;
+  
+  &.reports {
+    background: $color-yellow url('../images/reports.svg') no-repeat 90% 100%;
+    background-size: 30% auto;
+    color: $color-brown;
+    
+    form {
+      margin-top: $base-padding;
+    }
+    
+    select {
+      margin: $base-padding 0;
+      border: none;
+      background: #fff;
+      border-radius: 3px;
+      line-height: 1.5;
+      font-size: $font-size-med;
+    }
+  }
+  
+  &.sample {
+    .button {
+      margin-top: $base-padding/2;
+    }
+  }  
+  
+  &.signin {
+    background: $color-dark-blue;
+    color: #fff;
+    
+    form {
+      margin-top: $base-padding*1.2;
+    }
+    
+    input:focus {
+      outline: none;
+    }
+    
+    input[type='text'],
+    input[type='password'] {
+      border: none;
+      border-radius: 3px;
+      padding: $base-padding;
+      margin-top: $base-padding/2; 
+      width: 100%;
+    }
+    
+    .button {
+      margin-top: $base-padding;
+      margin-right: $base-padding;
+    }
+    
+    a {
+      color: #fff;
+      font-size: $font-size-small;
+      
+    }
+  }
+  
+  h3, h4 {
+    margin: 0;
+    text-transform: uppercase;
+    line-height: 1.2;
+
+    em {
+      font-style: normal;
+      text-transform: none;
+    }
+    
+  }
+  
+  h3 {
+    font-size: $font-size-large;
+    font-weight: $black;
+  }
+  
+  h4 {
+    letter-spacing: 0.03em;
+  }
+}
+
+#homepage-content {
+  h2 {
+    font-size: $font-size-large;
+  }
+}
+
+
+.reports-list {
+  margin-top: $base-padding;
+  
+  li {
+    margin-bottom: $base-padding;
+    
+    a {
+      display: block;
+      text-decoration: none;      
+      color: $color-light;
+      
+
+      span {
+        display: inline-block;
+        height: 40px;
+        width: 28px;
+        float: left;
+        margin-right: $base-padding;
+        margin-top: 0;
+      }
+
+      h5 {
+        margin: 0;
+        font-size: $font-size-base;
+        font-weight: $bold;
+        color: $color-dark;
+        line-height: 1.2;
+      }
+      
+      &:hover {
+        color: $color-dark;
+        
+        .icon-pdf {
+          fill: $color-dark; 
+        }
+        
+        h5 {
+          color: $color-dark; 
+        }
+      }     
+    }  
+  }
+}
+
+.services-list {
+  font-size: $font-size-med;
+  font-weight: $normal;
+}
+
+
+.news-list {
+  a {
+    text-decoration: none;
+    display: block;
+    margin-bottom: $base-padding*2;
+    
+    small {
+      color: $color-mute;
+      font-weight: $light;
+      text-transform: uppercase;
+    }
+    
+    h4 {
+      margin: 0;
+      font-size: $font-size-med;
+    }
+    
+    p {
+      margin: 0;
+      color: $color-dark;
+    }
+  }
+}
+
+
+/* Services  ---------------------- */
+
+.more, .services-list a, .news-list a {
+  display: block;
+  padding: $base-padding/2 $base-padding/2; 
+  
+    &:after {
+      content: '\232a';
+      margin-left: $base-padding;
+      margin-top: -$base-padding/2;
+      float: right;
+      opacity: 0;
+      font-size: $font-size-large;
+      font-weight: $bold;
+      @include vendor-prefix(transition, all 0.2s ease-out); 
+      @include vendor-prefix(transform, translateX(-30px));   
+    }
+    
+    &:hover {
+      
+      &:after {
+        opacity: 1;
+        @include vendor-prefix(transform, translateX(0px)); 
+      }  
+    }
+
+}
+
+.news-list a:after {
+  margin-top: -60px;
+  font-size: $base-padding*2.5;
+}
+
+
+/* Footer  ---------------------- */
+
+footer, #footer {
+  padding: $base-padding*2 0;
+  padding-bottom: $base-padding*4;
+  margin-top: $base-padding*2; 
+  border-top: 1px solid $color-light-grey;
+  text-align: center;
+  color: $color-mute;
+
+  a {
+    color: $color-mid;
+    
+    &:hover {
+      color: $color-blue;
+    }
+  }
+
+  ul {
+    @include blank-list;
+    
+    margin-bottom: $base-padding;
+    
+    li {
+      display:inline;
+      
+      a {
+        display:inline-block;
+        padding: 10px;
+      }
+    }
+  }
+}
+
+
+/* Mobile and up media queries  ---------------------- */
+@media #{$small-up} {
+
+}  
+
+
+
+/* Tablet and up media queries  ---------------------- */
+@media #{$medium-up} {
+  .hidden-small   { display: inline; }
+    
+  #logo { 
+    margin-top: $base-padding*1.2;
+    margin-bottom: 0;
+    
+    h1, div {
+      &:after {
+        color: $color-mid;
+        font-weight: $normal;
+        content: "Independent Solutions"; 
+      }  
+    }
+    
+    small {
+      font-size: $font-size-small;
+      line-height: 1.2
+    }
+  }  
+    
+  .hero {
+    .inner {
+      padding: $base-padding*5 $base-padding*2;   
+    }
+    
+    
+    #fuel {
+      .fuel-drop {
+        @include vendor-prefix(transform, scale(0,0) translate3d(0,0,0));
+        @include vendor-prefix(animation, drop 2s 2s ease-out infinite);
+        @include vendor-prefix(transform-origin, 50% 0%);
+      }
+    }    
+  }
+
+  .box {
+      margin-top: $base-padding*2;
+      
+    &.reports {
+      form {
+        margin-top: $base-padding*3.6;
+      }
+    }
+  }
+
+} 
+
+/* Desktop and up media queries  ---------------------- */
+@media #{$large-up} {
+ 
+  .hero {
+    
+    .row {
+      border-radius: $base-padding/2;      
+    }
+    
+    #fuel {
+      display: block;
+      margin-top: 25px;
+      margin-bottom: -10px;
+      @include vendor-prefix(animation, bounceInRight 0.9s 0s ease-out);
+      @include vendor-prefix(fill-mode, forwards);
+      
+      #jerrycan {
+        margin-top: 0;
+        margin-left: 0;
+      }
+    }
+  }
+  
+  
+  #homepage-boxes {
+    .first {
+      padding-left: 0;
+    }  
+    
+    .last {
+      padding-right: 0;
+    }
+  } 
+
+} 

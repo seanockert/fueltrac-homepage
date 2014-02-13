@@ -1,0 +1,33 @@
+@import "bourbon";
+
+@include keyframes(bounceInRight)
+{
+  0% { opacity: 0; @include transform(translateX(800px));}  
+  60% { opacity: 1; @include transform(translateX(-30px));}  
+  80% { @include transform(translateX(5px));}  
+  100% { @include transform(translateX(0));}  
+  
+}
+
+@include keyframes(drop)
+{
+    0% { @include transform(scale(0,0)  translate3d(0,0,0)); }
+    30% { @include transform(scale(1.05,0.8)  translate3d(0,0,0)); }
+    35% { @include transform(scale(1,1)  translate3d(0,0,0)); }
+    100% { @include transform(scale(1,1)  translate3d(0,200px,0)); }
+} 
+
+@include keyframes(press)
+{
+    0% { @include transform(scale(1,1)); }
+    50% { @include transform(scale(0.7,0.85)); }
+    100% { @include transform(scale(0.9,0.9)); }
+} 
+
+@include keyframes(bounce)
+{
+    0% { @include transform(scale(1,1)); }
+    50% { @include transform(scale(1.1,0.9)); }
+    100% { @include transform(scale(1,1)); }
+} 
+
