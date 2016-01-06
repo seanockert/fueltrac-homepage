@@ -166,6 +166,10 @@ textarea:-moz-placeholder {
   display: block;
 }
 
+.clear {
+  clear: both;
+}
+
 *,
 *:before,
 *:after {
@@ -291,11 +295,6 @@ nav ul>li:last-child {
   text-decoration: none;
 }
 
-.hero a span {
-  display: inline-block;
-  margin-right: 0.75rem;
-}
-
 .hero a:hover {
   background: #143758;
 }
@@ -310,7 +309,7 @@ nav ul>li:last-child {
   background: #d4d4d4;
   padding: 1.5rem;
   margin-top: 0.9375rem;
-  min-height: 220px;
+  min-height: 232px;
 }
 
 .box.reports {
@@ -869,11 +868,6 @@ nav ul>li:last-child {
   text-decoration: none;
 }
 
-.hero a span {
-  display: inline-block;
-  margin-right: 0.75rem;
-}
-
 .hero a:hover {
   background: #143758;
 }
@@ -888,7 +882,7 @@ nav ul>li:last-child {
   background: #d4d4d4;
   padding: 1.5rem;
   margin-top: 0.9375rem;
-  min-height: 220px;
+  min-height: 232px;
 }
 
 .box.reports {
@@ -1220,6 +1214,7 @@ nav ul>li:last-child {
   -ms-fill-mode: forwards;
   -moz-fill-mode: forwards;
   fill-mode: forwards;
+  -webkit-appearance: none;
 }
 
 .button:hover,
@@ -1286,9 +1281,44 @@ nav ul>li:last-child {
   background: #0a1d2f;
 }
 
+#play-button {
+  fill: #fff;
+  margin-bottom: -23px;
+  margin-top: -12px;
+}
+
 @media only screen and (min-width: 40.063em) {
   .hero .button {
     width: auto;
+  }
+}
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .box.signin {
+    min-height: 150px;
+  }
+
+  .box.signin input[type='text'],
+  .box.signin input[type='password'],
+  .box.signin .button {
+    float: left;
+    width: 39%;
+    margin-right: 1%;
+    margin-top: 0;
+  }
+
+  .box.signin .button {
+    width: 20%;
+    margin-right: 0;
+  }
+
+  .box.signin br {
+    display: none;
+  }
+
+  .box.signin a {
+    float: left;
+    margin-top: 12px;
   }
 }
 
@@ -1303,6 +1333,10 @@ nav ul>li:last-child {
 
 .blank-list>li {
   display: block;
+}
+
+.clear {
+  clear: both;
 }
 
 *,

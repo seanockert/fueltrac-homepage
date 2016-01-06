@@ -14,7 +14,7 @@
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   @include vendor-prefix(transition, all 0.15s ease-out);
   @include vendor-prefix(fill-mode, forwards);
-  
+  -webkit-appearance: none;
   
   &:hover, &:focus, &:active {
     background: lighten($color-mid, 10%);
@@ -72,11 +72,46 @@
     
     &:focus, &:active {
       background: darken($color-dark-blue, 20%);
-    }        
+    }
+}
+
+#play-button {
+  fill: #fff;
+  margin-bottom: -23px;
+  margin-top: -12px;
 }
 
 @media #{$medium-up} {
   .hero .button {
     width: auto;
   }  
-}  
+}
+
+@media #{$medium-only} {
+  .box.signin {
+    min-height: 150px;
+    
+    input[type='text'], 
+    input[type='password'], 
+    .button {
+      float: left;
+      width: 39%;
+      margin-right: 1%;
+      margin-top: 0;
+    }
+    
+    .button {
+      width: 20%;
+      margin-right: 0;
+    }
+    
+    br {
+      display: none;
+    }
+    
+    a {
+      float: left;
+      margin-top: 12px;
+    }
+  }
+}

@@ -52,7 +52,7 @@ gulp.task('html', function() {
       minifyJS: true,
       minifyCSS: true
     }))
-    .pipe(rename('index-compressed.html'))
+    //.pipe(rename('index.html'))
     .pipe(gulp.dest('dist'))
 });
 
