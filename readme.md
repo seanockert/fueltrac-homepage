@@ -10,9 +10,9 @@ The design was adapted from an old static design I did that was rejected in favo
 Uses:
 - Zurb Foundation 5 grid
 - Bourbon for the SCSS animation mixins
-- Responsive-nav.js (@viljamis) 
+- Responsive-nav.js (@viljamis)
 
 Todo:
-- Older IE compatability
+- Older IE compatibility
 - PNG fallback for SVG images on older IE
 - Simple modal overlay for video

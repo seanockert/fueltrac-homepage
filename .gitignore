@@ -1,4 +1,8 @@
 .DS_Store
-.sass-cache
+.sass-cache/
+node_modules/
+_old-version/
 images/pdf.svg
 images/fuel.svg
+node_modules
+npm-debug.log
