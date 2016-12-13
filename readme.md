@@ -1,18 +1,19 @@
-Fueltrac Homepage
-====
+# Fueltrac Homepage
 
-[Demo here](http://balsamade.com/fueltrac-mockup/ "Fueltrac homepage mockup") 
+An lightweight (<20KB), yet attractive, responsive homepage with SVG images and CSS animation. 
+[Loads blazingly fast (less than half a second)](https://tools.pingdom.com/#!/e6X62/https://seanockert.com/projects/fueltrac/ "Pingdom tools results") and can serve as a good base for small sites.
 
-An ultra lightweight (<50KB), yet attractive responsive homepage with SVG images and animation. It can serve as a good base for building projects.
+## Demo
+https://seanockert.com/projects/fueltrac/
 
+## Uses
+- Zurb Foundation 5 grid
+- Responsive-nav.js (@viljamis)
+- Gulp taskrunner to compile the project
+
+## Reason
 The design was adapted from an old static design I did that was rejected in favour of [this](http://fueltrac.com.au/ "Fueltrac website") 
 
-Uses:
-- Zurb Foundation 5 grid
-- Bourbon for the SCSS animation mixins
-- Responsive-nav.js (@viljamis)
-
-Todo:
-- Older IE compatibility
+## Todo:
 - PNG fallback for SVG images on older IE
-- Simple modal overlay for video
+- Lightweight modal overlay for video
