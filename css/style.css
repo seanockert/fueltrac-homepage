@@ -331,6 +331,10 @@ nav ul>li:last-child {
   font-size: 18px;
 }
 
+.box.sample h4 {
+  margin-bottom: 0.75rem;
+}
+
 .box.sample .button {
   margin-top: 0.375rem;
 }
@@ -902,6 +906,10 @@ nav ul>li:last-child {
   border-radius: 3px;
   line-height: 1.5;
   font-size: 18px;
+}
+
+.box.sample h4 {
+  margin-bottom: 0.75rem;
 }
 
 .box.sample .button {

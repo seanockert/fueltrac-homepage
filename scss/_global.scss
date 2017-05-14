@@ -189,6 +189,10 @@ nav ul {
   }
 
   &.sample {
+    h4 {
+      margin-bottom: $base-padding;
+    }
+    
     .button {
       margin-top: $base-padding/2;
     }
